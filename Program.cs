@@ -156,6 +156,10 @@ namespace first_C__exercises_entra21
                     }
                 }
                 else if(option == 3){
+                    if((candidates[0] == null && candidates[1]== null) || (candidate1Vote == 0) && (candidate2Vote==0)){
+                        System.Console.WriteLine("Please, you need to put a candidate in the system or start a votation\n");
+                        continue;
+                    }
                     if(candidate1Vote > candidate2Vote){
                         System.Console.WriteLine($"{candidates[0]} won!!!");
                         break;
@@ -186,7 +190,7 @@ namespace first_C__exercises_entra21
             System.Console.WriteLine("how much does it cost?");
             cigarettesPrice = double.Parse(System.Console.ReadLine());
             
-            System.Console.WriteLine($"You've lost R${String.Format("{0:0.00}",(365*years)*cigarettesPerDay*cigarettesPrice)}");
+            System.Console.WriteLine($"You've lost R${String.Format("{0:0.00}",(365*years)*cigarettesPerDay*(cigarettesPrice/20))}");
                     
         }
 
@@ -269,7 +273,7 @@ namespace first_C__exercises_entra21
             int counter = 0;
 
             while(counter < 10){
-                System.Console.WriteLine("Digt a number: ");
+                System.Console.WriteLine("Digit a number: ");
                 numbers.Add(Int32.Parse(System.Console.ReadLine()));
                 counter++;
             }
@@ -284,7 +288,7 @@ namespace first_C__exercises_entra21
             int counter = 0;
 
             while(counter < 3){
-                System.Console.WriteLine("Digt a number: ");
+                System.Console.WriteLine("Digit a number: ");
                 numbers.Add(Int32.Parse(System.Console.ReadLine()));
                 counter++;
             }
@@ -304,7 +308,7 @@ namespace first_C__exercises_entra21
             var multipleBy5 = 0;
 
             while(counter < 10){
-                System.Console.WriteLine("Digt a number: ");
+                System.Console.WriteLine("Digit a number: ");
                 var number =Int32.Parse(System.Console.ReadLine());
                 if(number % 3 == 0){
                     multipleBy3++;
