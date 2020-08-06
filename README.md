@@ -1,13 +1,13 @@
 ## First C# exercises Entra21
 
-Each resolution of this list is in this repository. The identification is a commentary above the Class' name:
+Each resolution of this list is in this repository. The identification is the method's name:
 
-    // Exercise 1)a <--- Id
+    // static void Exercise1a() <--- Id
 
-If you'd like to run those codes, you need to replace de class' name to Main and after that, run the code:
+If you'd like to run those codes, you need to instanciate the method into Main method and after that, run the code:
 
 ``` c#
-static void IncreasingNumbers(string[] args)
+static void Exercise1a()
         {
             var counter = 1;
             while(counter <= 10){
@@ -16,15 +16,11 @@ static void IncreasingNumbers(string[] args)
             }
         }
 
-//Replace the name (IncreasingNumbers) to (Main):
+//Intanciate (Exercise1a) into (Main):
 
 static void Main(string[] args)
         {
-            var counter = 1;
-            while(counter <= 10){
-                System.Console.WriteLine(counter);
-                counter++;
-            }
+            Exercise1a();    
         }
 
 //Then, run the code!
