@@ -67,8 +67,8 @@ imprimir a mensagem: "DIVISÃO POR ZERO".
 - Maior que R$ 2.000,00 - 30% desconto
 
 
-17)Imprimir a tabuada de qualquer número fornecido pelo usuário até que o usuário forneça o valor –1.
+17. Imprimir a tabuada de qualquer número fornecido pelo usuário até que o usuário forneça o valor –1.
 
-18)As maçãs custam R$ 1,30 cada se forem compradas menos de uma dúzia, e R$ 1,00 se forem
+18. As maçãs custam R$ 1,30 cada se forem compradas menos de uma dúzia, e R$ 1,00 se forem
 compradas pelo menos 12. Escreva um programa que leia o número de maçãs compradas, calcule e
 escreva o custo total da compra. 

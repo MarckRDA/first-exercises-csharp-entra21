@@ -53,12 +53,21 @@ namespace first_C__exercises_entra21
 
         static void Exercise4()
         {
-            double age;
-            double average = 0.0;
+            var age = 0.0;
+            var average = 0.0;
             var counter = 0.0;
             while(true){
                 Console.WriteLine("Digit an age: ");
-                age = double.Parse(Console.ReadLine());
+                var input = Console.ReadLine();
+                try
+                {
+                    age = double.Parse(input);    
+                }
+                catch (System.Exception)
+                {
+                    Console.WriteLine("Insert only numbers!");    
+                }
+                
                 if(age == 0.0){
                     break;
                 }
@@ -70,16 +79,25 @@ namespace first_C__exercises_entra21
 
         static void Exercise5()
         {
-            double womensAge;
+            var womensAge = 0.0;
             const double numberWomen = 5.0;
-            double percents = 0.0;
+            var percents = 0.0;
             
             for (double count = 0; count < numberWomen; count++)
             {
                 System.Console.WriteLine("Digit the woman's name: ");
                 Console.ReadLine();
                 System.Console.WriteLine("Digit the woman's age: ");
-                womensAge = double.Parse(System.Console.ReadLine());
+                var input = Console.ReadLine();
+                try
+                {
+                    womensAge = double.Parse(input);    
+                }
+                catch (System.Exception)
+                {
+                    Console.WriteLine("Insert only numbers!!");
+                }
+                
                 percents = (womensAge > 17 && womensAge < 36) ? percents+=1 : percents;                   
                 
             }
@@ -89,10 +107,19 @@ namespace first_C__exercises_entra21
         static void Exercise6()
         {
             var candidates = new (string name, int votes)[2];
+            int option = 0;
             Console.WriteLine("Wellcome to the Ballot box system. \n");
             while(true){
                 Console.WriteLine("Select: 1)Register a candidate / 2)Vote / 3)Count votes: ");
-                int option = Int32.Parse(Console.ReadLine());
+                var inputOption =Console.ReadLine();
+                try
+                {
+                    option = Int32.Parse(inputOption);
+                }
+                catch (System.Exception)
+                {
+                    Console.WriteLine("Insert only numbers!!");
+                }
                 if(!(option == 1 || option == 2 || option == 3)){
                     Console.WriteLine("Please press the right option!\n");
                     continue;
@@ -181,28 +208,47 @@ namespace first_C__exercises_entra21
 
         static void Exercise7()
         {
-            double cigarettesPerDay;
-            double cigarettesPrice;
-            double years;
+            var cigarettesPerDay = 0.0;
+            var cigarettesPrice = 0.0;
+            var years = 0.0;
                        
             System.Console.WriteLine("How many years have you been smoking cigarettes? ");
-            years = double.Parse(Console.ReadLine());
+            var input = Console.ReadLine();
             System.Console.WriteLine("And how many cigarettes per day? ");
-            cigarettesPerDay = double.Parse(Console.ReadLine());
+            var input2 = Console.ReadLine();
             System.Console.WriteLine("how much does it cost?");
-            cigarettesPrice = double.Parse(Console.ReadLine());
-            
+            var input3 = Console.ReadLine();
+            try
+            {
+                years = Double.Parse(input);
+                cigarettesPerDay = Double.Parse(input2);
+                cigarettesPrice = Double.Parse(input3);
+            }
+            catch (System.Exception)
+            {
+                Console.WriteLine("Insert only numbers!!");
+            }
             System.Console.WriteLine($"You've lost R${String.Format("{0:0.00}",(365*years)*cigarettesPerDay*(cigarettesPrice/20))}");
                     
         }
 
         static void Exercise8()
         {
+            var numberOne = 0.0;
+            var numberTwo = 0.0;
             System.Console.WriteLine("Digit a number: ");
-            var numberOne = double.Parse(System.Console.ReadLine());
+            var input = Console.ReadLine();
             System.Console.WriteLine("Digit another number: ");
-            var numberTwo = double.Parse(System.Console.ReadLine());
-
+            var input2 = Console.ReadLine();
+            try
+            {
+                numberOne = double.Parse(input);
+                numberTwo = double.Parse(input2);
+            }
+            catch (System.Exception)
+            {
+                Console.WriteLine("Insert only numbers!!");
+            }
             var answer = (numberOne % numberTwo == 0) ?  $"{numberOne} is a multiple of {numberTwo}" : $"{numberOne} is not a multiple of {numberTwo}";
             Console.WriteLine(answer);
         }
@@ -213,9 +259,16 @@ namespace first_C__exercises_entra21
             for (int i = 0; i < numbers.Length; i++)
             {
                 System.Console.WriteLine("Digit the {0}º number: ", i+1);
-                numbers[i] = Double.Parse(Console.ReadLine());    
+                var input = Console.ReadLine();
+                try
+                {
+                    numbers[i] = Double.Parse(input);    
+                }
+                catch (System.Exception)
+                {
+                    Console.WriteLine("Insert only numbers!!");
+                }           
             }
-
             var answer = (numbers[0] > numbers[1] + numbers[2]) ? $"{numbers[0]} is bigger than the sum between {numbers[1]} and {numbers[2]}" :  $"{numbers[0]} is lower than the sum between {numbers[1]} and {numbers[2]}";
             Console.WriteLine(answer);
             
@@ -223,11 +276,22 @@ namespace first_C__exercises_entra21
 
         static void Exercise10()
         {
+            var numberOne = 0.0;
+            var numberTwo = 0.0;
             System.Console.WriteLine("Digit a number: ");
-            var numberOne = Double.Parse(Console.ReadLine());
+            var input = Console.ReadLine();
             System.Console.WriteLine("Digit another number: ");
-            var numberTwo = Double.Parse(Console.ReadLine());
-            
+            var input2 = Console.ReadLine();
+            try
+            {
+                numberOne = Double.Parse(input);
+                numberTwo = Double.Parse(input2);
+            }
+            catch (System.Exception)
+            {
+                Console.WriteLine("Insert only numbers!!");
+            }
+                    
             if(numberOne > numberTwo){
                 Console.WriteLine($"{numberOne} is bigger than {numberTwo}");
             }
@@ -242,11 +306,23 @@ namespace first_C__exercises_entra21
 
         static void Exercise12()
         {
-            Console.WriteLine("Digit a number: ");
-            var numberOne = double.Parse(Console.ReadLine());
-            Console.WriteLine("Digit another number: ");
-            var numberTwo = double.Parse(Console.ReadLine());
+            var numberOne = 0.0;
+            var numberTwo = 0.0;
             
+            Console.WriteLine("Digit a number: ");
+            var input = Console.ReadLine();
+            Console.WriteLine("Digit another number: ");
+            var input2 = Console.ReadLine();
+            
+            try
+            {
+                numberOne = double.Parse(input);
+                numberTwo = double.Parse(input2);
+            }
+            catch (System.Exception)
+            {
+                Console.WriteLine("Insert only numbers!!");
+            }
             var answer = (numberTwo == 0.0) ? "Division by 0 doesn't exist!" : $"Result = {numberOne/numberTwo}"; 
             Console.WriteLine(answer);
             
@@ -259,7 +335,15 @@ namespace first_C__exercises_entra21
             for (int i = 0; i < numbers.Length; i++)
             {
                 Console.WriteLine("Digit a number: ");
-                numbers[i] = Double.Parse(Console.ReadLine());
+                var input = Console.ReadLine();
+                try
+                {
+                    numbers[i] = Double.Parse(input);    
+                }
+                catch (System.Exception)
+                {
+                    Console.WriteLine("Insert only numbers!!");
+                }
             }
 
             for (int i = 0; i < numbers.Length; i++)
@@ -280,20 +364,49 @@ namespace first_C__exercises_entra21
 
         static void Exercise14()
         {
-            var numbers = new List<int>();
-            int counter = 0;
+            var numberA = 0.0;
+            var numberB = 0.0;
+            var numberC = 0.0;
+            var temp = 0.0;
+            System.Console.WriteLine("Digit a number: ");
+            var inputA = Console.ReadLine();
+            System.Console.WriteLine("Digit a number: ");
+            var inputB = Console.ReadLine();
+            System.Console.WriteLine("Digit a number: ");
+            var inputC = Console.ReadLine();
 
-            while(counter < 3){
-                System.Console.WriteLine("Digit a number: ");
-                numbers.Add(Int32.Parse(System.Console.ReadLine()));
-                counter++;
+            try
+            {
+                numberA = Double.Parse(inputA);
+                numberB = Double.Parse(inputB);
+                numberC = Double.Parse(inputC);
             }
-            numbers.Sort();
-            counter = 0;
-            while(counter < 3){
-                System.Console.WriteLine("\n" + numbers.ToArray()[counter]);
-                counter++;
+            catch (System.Exception)
+            {
+                Console.WriteLine("Insert only numbers!!");
             }
+            
+            if (numberA > numberB && numberA > numberC)
+            {
+                temp = numberC;
+                numberC = numberA;
+                numberA = temp;
+            }
+            if (numberB > numberA && numberB > numberC)
+            {
+                temp = numberC;
+                numberC = numberB;
+                numberB = temp;
+            }
+            if (numberA > numberB)
+            {
+                temp = numberB;
+                numberB = numberA;
+                numberA = temp;
+            }
+            Console.WriteLine(numberA);
+            Console.WriteLine(numberB);
+            Console.WriteLine(numberC);
         }
 
         static void Exercise15()
@@ -303,9 +416,18 @@ namespace first_C__exercises_entra21
             var multipleBy5 = 0;
 
             for (int i = 0; i < counter; i++)
-            {
+            {   
+                var number = 0.0;
                 Console.WriteLine("Digit a number: ");
-                var number =Int32.Parse(System.Console.ReadLine());
+                var input = Console.ReadLine();
+                try
+                {
+                    number = Int32.Parse(input);
+                }
+                catch (System.Exception)
+                {
+                    Console.WriteLine("Insert only numbers!!");
+                }
                 if(number % 3 == 0){
                     multipleBy3++;
                 }
@@ -319,10 +441,18 @@ namespace first_C__exercises_entra21
 
         static void Exercise16()
         {
-            double netSalary;
+            double netSalary = 0.0;
             System.Console.WriteLine("Please digit your salary: ");
-            netSalary = double.Parse(System.Console.ReadLine());
-            
+            var input = Console.ReadLine();
+            try
+            {
+                netSalary = double.Parse(input);    
+            }
+            catch (System.Exception)
+            {
+                Console.WriteLine("Insert only number!!");
+            }
+                        
             if(netSalary < 600.00){
                 System.Console.WriteLine($"Net Salary: R$ {netSalary}");
             }
@@ -338,10 +468,18 @@ namespace first_C__exercises_entra21
         }
         static void Exercise17()
         {
-            int number;
+            var number = 0.0;
             Console.WriteLine("Digit a number: Press -1 to quit.");
-            number = Int32.Parse(Console.ReadLine());
-
+            var input = Console.ReadLine();
+            try
+            {
+                number = Int32.Parse(input);    
+            }
+            catch (System.Exception)
+            {
+                Console.WriteLine("Insert only number!!");
+            }
+            
             Console.WriteLine("========================");
             Console.WriteLine(" Mutiplication table ");
             Console.WriteLine("========================");
@@ -358,9 +496,17 @@ namespace first_C__exercises_entra21
 
         static void Exercise18()
         {
-            double qtdApples;
+            var qtdApples = 0.0;
             System.Console.WriteLine("How many apples would you like buying? ");
-            qtdApples = double.Parse(System.Console.ReadLine());
+            var input = Console.ReadLine();
+            try
+            {
+                qtdApples = Double.Parse(input);
+            }
+            catch (System.Exception)
+            {
+                Console.WriteLine("Insert only numbers!!");
+            }
             var answer = (qtdApples < 6.00) ? $"Purchase: R$ {String.Format("{0:0.00}",qtdApples*1.30)}" : $"Purchase: R$ {String.Format("{0:0.00}", qtdApples*1.00)}";  
             Console.WriteLine(answer);
         }
