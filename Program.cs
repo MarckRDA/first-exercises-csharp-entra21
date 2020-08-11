@@ -67,7 +67,7 @@ namespace first_C__exercises_entra21
                     }
                     catch (System.Exception)
                     {
-                        Console.WriteLine("Insert only numbers!");    
+                        Console.WriteLine("Insert only numbers!! Try again!");    
                     }    
                 }
                 
@@ -101,7 +101,7 @@ namespace first_C__exercises_entra21
                     }   
                     catch (System.Exception)
                     {
-                        Console.WriteLine("Insert only numbers!!");
+                        Console.WriteLine("Insert only numbers!! Try again!");
                     }    
                 }
                 percents = (womensAge > 17 && womensAge < 36) ? percents+=1 : percents;                   
@@ -127,7 +127,7 @@ namespace first_C__exercises_entra21
                     }
                     catch (System.Exception)
                     {
-                        Console.WriteLine("Insert only numbers!!");
+                        Console.WriteLine("Insert only numbers!! Try again!");
                     }    
                 }
                 
@@ -233,7 +233,7 @@ namespace first_C__exercises_entra21
                 }
                 catch (System.Exception)
                 {
-                    Console.WriteLine("Insert only numbers!!");
+                    Console.WriteLine("Insert only numbers!! Try again!");
                 }    
             }
             System.Console.WriteLine("And how many cigarettes per day? ");
@@ -246,7 +246,7 @@ namespace first_C__exercises_entra21
                 }
                 catch (System.Exception)
                 {
-                    Console.WriteLine("Insert only numbers!!");
+                    Console.WriteLine("Insert only numbers!! Try again!");
                 }    
             }
             System.Console.WriteLine("how much does it cost?");
@@ -259,7 +259,7 @@ namespace first_C__exercises_entra21
                 }
                 catch (System.Exception)
                 {
-                    Console.WriteLine("Insert only numbers!!");
+                    Console.WriteLine("Insert only numbers!! Try again!");
                 }    
             }
             
@@ -281,7 +281,7 @@ namespace first_C__exercises_entra21
                 }
                 catch (System.Exception)
                 {
-                    Console.WriteLine("Insert only numbers!!");
+                    Console.WriteLine("Insert only numbers!! Try again!");
                 }
             }
             System.Console.WriteLine("Digit another number: ");
@@ -294,7 +294,7 @@ namespace first_C__exercises_entra21
                 }
                 catch (System.Exception)
                 {
-                    Console.WriteLine("Insert only numbers!!");
+                    Console.WriteLine("Insert only numbers!! Try again!");
                 }
             }
             var answer = (numberOne % numberTwo == 0) ?  $"{numberOne} is a multiple of {numberTwo}" : $"{numberOne} is not a multiple of {numberTwo}";
@@ -316,7 +316,7 @@ namespace first_C__exercises_entra21
                     }
                     catch (System.Exception)
                     {
-                        Console.WriteLine("Insert only numbers!!");
+                        Console.WriteLine("Insert only numbers!! Try again!");
                     }
                 }           
             }
@@ -339,7 +339,7 @@ namespace first_C__exercises_entra21
                 }
                 catch (System.Exception)
                 {
-                    Console.WriteLine("Insert only numbers!!");
+                    Console.WriteLine("Insert only numbers!! Try again!");
                 }    
             }
             System.Console.WriteLine("Digit another number: ");
@@ -352,7 +352,7 @@ namespace first_C__exercises_entra21
                 }
                 catch (System.Exception)
                 {
-                    Console.WriteLine("Insert only numbers!!");
+                    Console.WriteLine("Insert only numbers!! Try again!");
                 }
             }
                     
@@ -383,7 +383,7 @@ namespace first_C__exercises_entra21
                 }
                 catch (System.Exception)
                 {
-                    Console.WriteLine("Insert only numbers!!");
+                    Console.WriteLine("Insert only numbers!! Try again!");
                 }    
             }
             Console.WriteLine("Digit another number: ");
@@ -396,7 +396,7 @@ namespace first_C__exercises_entra21
                 }
                 catch (System.Exception)
                 {
-                    Console.WriteLine("Insert only numbers!!");
+                    Console.WriteLine("Insert only numbers!! Try again!");
                 }    
             }
             var answer = (numberTwo == 0.0) ? "Division by 0 doesn't exist!" : $"Result = {numberOne/numberTwo}"; 
@@ -458,7 +458,7 @@ namespace first_C__exercises_entra21
                 }
                 catch (System.Exception)
                 {
-                    Console.WriteLine("Insert only numbers!!");
+                    Console.WriteLine("Insert only numbers!! Try again!");
                 }
             }
             
@@ -472,7 +472,7 @@ namespace first_C__exercises_entra21
                 }
                 catch (System.Exception)
                 {
-                    Console.WriteLine("Insert only numbers!!");
+                    Console.WriteLine("Insert only numbers!! Try again!");
                 }    
             }
             
@@ -486,7 +486,7 @@ namespace first_C__exercises_entra21
                 }
                 catch (System.Exception)
                 {
-                    Console.WriteLine("Insert only numbers!!");
+                    Console.WriteLine("Insert only numbers!! Try again!");
                 }    
             }
             
@@ -533,7 +533,7 @@ namespace first_C__exercises_entra21
                     }
                     catch (System.Exception)
                     {
-                        Console.WriteLine("Insert only numbers!!");
+                        Console.WriteLine("Insert only numbers!! Try again!");
                     }    
                 }
                 
@@ -562,7 +562,7 @@ namespace first_C__exercises_entra21
                 }
                 catch (System.Exception)
                 {
-                    Console.WriteLine("Insert only number!!");
+                    Console.WriteLine("Insert only number!! Try again!");
                 }   
             }          
                         
@@ -592,7 +592,7 @@ namespace first_C__exercises_entra21
                 }
                 catch (System.Exception)
                 {
-                    Console.WriteLine("Insert only number!!");
+                    Console.WriteLine("Insert only number!! Try again!");
                 }
             }
             
@@ -622,7 +622,7 @@ namespace first_C__exercises_entra21
                 }
                 catch (System.Exception)
                 {
-                    Console.WriteLine("Insert only numbers!!");
+                    Console.WriteLine("Insert only numbers!! Try again!");
                 }
             }
             var answer = (qtdApples < 6.00) ? $"Purchase: R$ {String.Format("{0:0.00}",qtdApples*1.30)}" : $"Purchase: R$ {String.Format("{0:0.00}", qtdApples*1.00)}";  
