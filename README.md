@@ -1,30 +1,6 @@
 ## First C# exercises Entra21
 
-Each resolution of this list is in this repository. The identification is the method's name:
-
-    // static void Exercise1a() <--- Id
-
-If you'd like to run those codes, you need to instanciate the method into Main method and after that, run the code:
-
-``` c#
-static void Exercise1a()
-        {
-            var counter = 1;
-            while(counter <= 10){
-                System.Console.WriteLine(counter);
-                counter++;
-            }
-        }
-
-//Intanciate (Exercise1a) into (Main):
-
-static void Main(string[] args)
-        {
-            Exercise1a();    
-        }
-
-//Then, run the code!
-```
+If you'd like to run those codes, you just need to choose the exercise between 1 and 18 in the Menu.cs file:
 
 1. Crie um programa que imprima:
 - Os números de 1 a 10 de forma crescente.
@@ -72,3 +48,4 @@ imprimir a mensagem: "DIVISÃO POR ZERO".
 18. As maçãs custam R$ 1,30 cada se forem compradas menos de uma dúzia, e R$ 1,00 se forem
 compradas pelo menos 12. Escreva um programa que leia o número de maçãs compradas, calcule e
 escreva o custo total da compra. 
+
